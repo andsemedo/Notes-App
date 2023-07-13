@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/profile"
+    tools:context=".ProfileActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view_themes"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-89dp"
+        android:gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_person"
+
+            app:civ_border_color="#FF000000"/>
+
+
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_image"
+            app:tint="@color/dark"
+            android:layout_toEndOf="@+id/profilePhoto"
+            android:layout_below="@+id/profilePhoto"
+            android:layout_marginTop="-39dp"
+            android:layout_marginStart="-30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:fontFamily="@font/opensans_medium"
+            android:textColor="@color/textColorHint"
+            android:textSize="8pt"
+            />
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNome"
+            android:textColorHint="@color/dark"
+            android:fontFamily="@font/opensans_bold"
+            android:textSize="10pt"
+            android:layout_marginTop="-10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/opensans_medium"
+            android:textColor="@color/textColorHint"
+            android:textSize="8pt"
+            />
+
+        <EditText
+            android:id="@+id/updateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEmail"
+            android:textColorHint="@color/dark"
+            android:fontFamily="@font/opensans_bold"
+            android:textSize="10pt"
+            android:layout_marginTop="-10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Atualizar"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:padding="20dp"
+            android:backgroundTint="#3AC53F"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+
+        >
+
+
+        <Button
+            android:id="@+id/btnDeleteProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Deletar conta"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:padding="20dp"
+            android:backgroundTint="@color/btnColor1"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

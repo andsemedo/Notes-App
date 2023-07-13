@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutChangeEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/background_dialog"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/textChangeEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:includeFontPadding="false"
+        android:text="Alterar email"
+        android:textColor="@color/dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/lineDialog"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/textChangeEmail"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editPasswordCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/opensans_medium"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Digite a sua palavra-passe"
+        android:textColor="@color/dark"
+        android:textSize="14sp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/lineDialog"
+    />
+
+    <TextView
+        android:id="@+id/textCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:includeFontPadding="false"
+        android:padding="8dp"
+        android:text="Cancelar"
+        android:textAllCaps="true"
+        android:textColor="@color/btnColor1"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textConfirm"
+        app:layout_constraintTop_toBottomOf="@id/editPasswordCheck"
+        />
+    <TextView
+        android:id="@+id/textConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:includeFontPadding="false"
+        android:padding="8dp"
+        android:text="Confirmar"
+        android:textAllCaps="true"
+        android:textColor="@color/cancelDelete"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPasswordCheck"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_image"
+        android:title="Carteira"
+        />
+
+    <item
+        android:id="@+id/themes"
+        android:icon="@drawable/ic_image"
+        android:title="Temas"
+        />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_image"
+        android:title="Perfil"
+        />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_image"
+        android:title="Sair"
+        android:actionLayout="@layout/menu_item_layout"
+        />
+
+</menu>

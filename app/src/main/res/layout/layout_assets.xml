@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutAssets"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_assets"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/textAssets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Assets"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_medium"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:text="Temas"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:paddingLeft="10dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tooltipText="Select background">
+
+        <LinearLayout
+        android:id="@+id/layoutAssetsThemes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/viewThemeDefault"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/background_theme_default"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageThemeDefault"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_done"
+                    app:tint="@color/black" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/viewTheme1"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageTheme1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    app:tint="@color/white" />
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/viewTheme6"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageTheme6"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    app:tint="@color/white" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/viewTheme9"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageTheme9"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    app:tint="@color/white" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_medium"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:text="Recursos"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layoutAddImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_image"
+                app:tint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="Imagem"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_medium"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

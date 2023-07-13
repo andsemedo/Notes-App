@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/newNoteLayout"
+    tools:context=".NewNoteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/addNoteBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/addNoteDone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_done"
+            app:tint="@color/dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:fontFamily="@font/opensans_bold"
+            android:hint="Título"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:textColor="@color/dark"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="13pt"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/addNoteDone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="120dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/noteImage"
+                tools:ignore="MissingConstraints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="18dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+
+                />
+
+            <ImageView
+                android:id="@+id/deleteNoteImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_remove_img"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/white"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintEnd_toEndOf="@id/noteImage"
+                app:layout_constraintTop_toTopOf="@id/noteImage"
+                android:visibility="gone"
+                />
+
+            <EditText
+                android:id="@+id/inputNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="@null"
+                android:fontFamily="@font/opensans_medium"
+                android:gravity="top"
+                android:hint="Comece a escrever"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:minHeight="350dp"
+                android:textColor="@color/dark"
+                android:textColorHint="@color/textColorHint"
+                android:textSize="10pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/noteImage"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/layout_assets"
+        android:layout_height="196dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

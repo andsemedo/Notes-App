@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431385192258",
+    "project_id": "notes-app-fb2dd",
+    "storage_bucket": "notes-app-fb2dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431385192258:android:72fffac0748866ea1e0adb",
+        "android_client_info": {
+          "package_name": "com.example.notesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431385192258-jmlg7mv3kunhktq5ingn64vkea54b44l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEBsPNCBdrsuLUN_p5EvtqQHzpBNvIgp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431385192258-jmlg7mv3kunhktq5ingn64vkea54b44l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

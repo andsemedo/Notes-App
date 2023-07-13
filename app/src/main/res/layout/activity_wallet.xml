@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".WalletActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view_themes"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-180dp"
+        android:paddingTop="40dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
+        <TextView
+            android:id="@+id/walletOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="28dp"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/white"
+            android:letterSpacing="0.04"
+            android:textAllCaps="true"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_card_view"
+        android:orientation="vertical"
+        android:elevation="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="40dp"
+                android:paddingTop="40dp"
+                android:text="Dinheiro Total"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textViewBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22dp"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white"
+                android:paddingTop="70dp"
+                android:paddingLeft="40dp"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/dinheiro"
+                app:tint="@color/white"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="35dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/makeDeposit"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#00BCD4"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/deposito"
+                    app:tint="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fazer Depósito"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buyTheme"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#4CAF50"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/temas"
+                    app:tint="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comprar temas"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
